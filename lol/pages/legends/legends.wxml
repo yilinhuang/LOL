@@ -1,0 +1,17 @@
+<view class="container result-list">
+       <block wx:for="{{result}}" wx:key="num">
+        <view class="legend-image">
+            <image style="width:60px;height:60px;"src="{{item.img}}" mode="aspectFit"></image>
+            <view  class="result-list">
+                <view class="date-time"> 
+                    <text class="date">{{item.date}}</text>
+                    <text class="time">{{item.time}}</text>
+                </view>
+                <view class="num-result">
+                    <text class="num">{{item.num}}</text>
+                    <text class="result">{{item.result}}</text>
+                </view>
+            </view>
+        </view>
+    </block>
+</view>
